@@ -1,4 +1,4 @@
-package com.example.testredis;
+package com.example.ticketredis;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -22,13 +22,13 @@ public class TicketTest {
 
 
     @Test
-    void ticket() {
+    void getTicket() {
         String ticket = stringRedisTemplate.opsForValue().get("ticket");
         log.info("ticket = {}", ticket);
     }
 
     @Test
-    void multiSession() {
+    void sessionCallback() {
         ExecutorService executorService = Executors.newFixedThreadPool(15);
         for (int i = 0; i < 15; i++) {
             executorService.execute(() -> stringRedisTemplate.execute(new SessionCallback<Void>() {

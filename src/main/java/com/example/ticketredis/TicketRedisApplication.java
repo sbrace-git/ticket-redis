@@ -1,13 +1,13 @@
-package com.example.testredis;
+package com.example.ticketredis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TestRedisApplication {
+public class TicketRedisApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TestRedisApplication.class, args);
+        SpringApplication.run(TicketRedisApplication.class, args);
     }
 
 }

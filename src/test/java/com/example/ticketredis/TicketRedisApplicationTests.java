@@ -1,10 +1,10 @@
-package com.example.testredis;
+package com.example.ticketredis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TestRedisApplicationTests {
+class TicketRedisApplicationTests {
 
     @Test
     void contextLoads() {
